@@ -1,20 +1,14 @@
+'use client'
+
 import { useEffect } from 'react'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 
 const ScrollToTop: React.FC = () => {
-  const router = useRouter()
+  const pathname = usePathname()
 
   useEffect(() => {
-    const handleRouteChange = () => {
-      window.scrollTo(0, 0)
-    }
-
-    router.events.on('routeChangeComplete', handleRouteChange)
-
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange)
-    }
-  }, [router.events])
+    window.scrollTo(0, 0)
+  }, [pathname])
 
   return null
 }
