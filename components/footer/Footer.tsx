@@ -1,7 +1,7 @@
 import './style.css'
 
-import vk from '@/img/icons/vk.svg'
-import gitHub from '@/img/icons/gitHub.svg'
+import IconVk from '@/components/icons/IconVk'
+import IconGitHub from '@/components/icons/IconGitHub'
 
 const Footer: React.FC = () => {
   return (
@@ -11,12 +11,12 @@ const Footer: React.FC = () => {
           <ul className="social">
             <li className="social__item">
               <a href="https://vk.com/rainboweclipse">
-                <img src={vk} alt="Link" />
+                <IconVk width={38} height={23}/>
               </a>
             </li>
             <li className="social__item">
               <a href="https://github.com/RainbowEclipsee">
-                <img src={gitHub} alt="Link" />
+                <IconGitHub width={38} height={38}/>
               </a>
             </li>
           </ul>

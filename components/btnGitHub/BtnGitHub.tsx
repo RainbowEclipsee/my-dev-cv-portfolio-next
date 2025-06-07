@@ -1,4 +1,4 @@
-import gitHubIcon from './gitHub-black.svg'
+import IconGitHubBlack from '../icons/IconGitHubBlack'
 
 interface BtnGitHubProps {
   link: string
@@ -11,7 +11,7 @@ const BtnGitHub: React.FC<BtnGitHubProps> = ({ link, text }) => {
 
   return (
     <a href={link} target="_blank" rel="noreferrer" className="btn-outline">
-      {isGitHubLink && <img src={gitHubIcon} alt="GitHub icon" />}
+      {isGitHubLink && <IconGitHubBlack width={24} height={24}/>}
       {buttonText}
     </a>
   )

@@ -24,7 +24,7 @@ const PlaceOfWork: React.FC<PlaceOfWorkProps> = ({ title, workTime, img, info, s
         <pre className="company__info">{info}</pre>
         <p className='stack'><strong>Stack: {stack}</strong></p>
 
-        {website === '' ? null : (
+        {website === ' ' ? null : (
           <a
             href={website}
             className="career-item__link"

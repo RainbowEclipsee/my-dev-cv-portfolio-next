@@ -8,8 +8,8 @@ import ScrollToTop from "@/utils/autoScrollToTop";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "My Dev CV Portfolio",
-  description: "Персональное портфолио Bogdan Eclipse",
+  title: "Makarchuk Bogdan - Dev",
+  description: "Персональное портфолио разработчика: Bogdan Makarchuk",
 };
 
 export default function RootLayout({
