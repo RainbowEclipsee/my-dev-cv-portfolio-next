@@ -1,4 +1,4 @@
-import IconGitHubBlack from '../icons/IconGitHubBlack'
+import IconGitHubBlack from '@/components/icons/IconGitHubBlack'
 
 interface BtnGitHubProps {
   link: string

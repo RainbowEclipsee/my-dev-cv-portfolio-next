@@ -11,7 +11,7 @@ interface ProjectProps {
 const Project: React.FC<ProjectProps> = ({ title, img, index }) => {
   return (
     <li className="project">
-      <Link href={`/project/${index}`}>
+      <Link href={`/projects/${index}`}>
           <Image
             src={img}
             alt={title}

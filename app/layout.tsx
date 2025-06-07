@@ -8,7 +8,7 @@ import ScrollToTop from "@/utils/autoScrollToTop";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Makarchuk Bogdan - Dev",
+  title: "Bogdan Makarchuk | Frontend Developer",
   description: "Персональное портфолио разработчика: Bogdan Makarchuk",
 };
 
@@ -20,16 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* Навигация (Navbar) */}
         <Navbar />
-
-        {/* Компонент для скролла наверх при переходе (Next.js-версия ScrollToTop) */}
         <ScrollToTop />
-
-        {/* Здесь будут «страницы» из файловой системы – вместо <Routes>…</Routes> */}
         {children}
-
-        {/* Футер */}
         <Footer />
       </body>
     </html>
