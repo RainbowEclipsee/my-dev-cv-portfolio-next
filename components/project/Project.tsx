@@ -15,8 +15,8 @@ const Project: React.FC<ProjectProps> = ({ title, img, index }) => {
           <Image
             src={img}
             alt={title}
-            width={300}
-            height={200}
+            width={370}
+            height={277.5}
             placeholder="blur"
             className="project__img"
           />

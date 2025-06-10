@@ -15,8 +15,7 @@ const PlaceOfWork: React.FC<PlaceOfWorkProps> = ({ title, workTime, img, info, s
   return (
     <li className="career-item">
       <div className="career-item__image">
-      <Image src={img} alt={title} width={300} height={200} placeholder="blur" />
-        {/* <img src={img} alt={title} /> */}
+      <Image src={img} alt={title} width={250} height={250} placeholder="blur" />
         <p className="career-item__work-time">{workTime}</p>
       </div>
       <div className="career-item__content">
