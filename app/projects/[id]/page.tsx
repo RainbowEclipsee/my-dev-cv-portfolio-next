@@ -4,10 +4,11 @@ import { projects } from '@/helpers/projectsList';
 import type { Project } from '@/helpers/projectsList';
 
 interface ProjectPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
+
 
 export function generateStaticParams() {
   return projects.map((project) => ({
@@ -16,7 +17,7 @@ export function generateStaticParams() {
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
-  const { id } = await Promise.resolve(params);
+  const { id } = await params;
   const project: Project | undefined = projects[Number(id)];
 
   if (!project) {
