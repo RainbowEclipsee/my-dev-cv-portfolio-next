@@ -1,11 +1,13 @@
-import "@/styles/reset.css";
-import "@/styles/main.css";
+import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import ScrollToTop from "@/utils/autoScrollToTop";
 
-import type { Metadata } from "next";
+import "@/styles/reset.css";
+import "@/styles/main.css";
+
 
 export const metadata: Metadata = {
   title: "Bogdan Makarchuk | Frontend Developer",
@@ -24,6 +26,8 @@ export default function RootLayout({
         <ScrollToTop />
         {children}
         <Footer />
+        
+        <SpeedInsights/>
       </body>
     </html>
   );
