@@ -1,4 +1,5 @@
 @import './reset.css';
+@import './fonts.css';
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
 
 :root {
@@ -35,6 +36,11 @@
   --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
 }
 
+::selection {
+  background-color: #00ab01;
+  color: black;             /* цвет текста при выделении */
+}
+
 .dark {
   /* Dark mode */
   --page-bg: black;
@@ -54,19 +60,12 @@ body {
   flex-direction: column;
   min-height: 100vh;
 
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'IBM_VGA_FONT', sans-serif;
   letter-spacing: -0.5px;
 
   /* Light mode */
   background-color: var(--page-bg);
   color: var(--text-color);
-
-	/* Убираем скролл */
-  /* overscroll-behavior: none; 
-  scroll-behavior: smooth;
-
-  backface-visibility: hidden;
-  transform: translate3d(0, 0, 0); */
 }
 
 html {
@@ -122,16 +121,13 @@ html {
 
 .btn {
   display: inline-block;
-  height: 48px;
   padding: 12px 28px;
-
-  border-radius: 5px;
+  border-radius: 2px;
   background-color: green;
   color: var(--white);
   letter-spacing: 0.15px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
-
   transition: opacity 0.2s ease-in;
   margin-bottom: 1.5em;
 }

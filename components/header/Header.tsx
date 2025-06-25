@@ -11,12 +11,14 @@ const Header: React.FC = () => {
           <br />a frontend developer
         </h1>
         <div className="header__text">
-          <p>with passion for learning and creating.</p>
+          <p>
+            with passion for learning and creating
+            <span className="blinking-cursor">_</span>  
+          </p>
         </div>
         <a href="/assets/Makarchuk Bogdan.pdf"
            target="_blank"
            className="btn"
-          //  rel="noopener noreferrer" // Пока под вопросом
            >
           Download CV
         </a>
