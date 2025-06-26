@@ -19,3 +19,4 @@ const IconVk: React.FC<React.SVGProps<SVGSVGElement>> = ({
 )
 
 export default IconVk
+

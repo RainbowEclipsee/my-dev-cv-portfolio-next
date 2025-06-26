@@ -19,7 +19,7 @@
 
 .header__wrapper {
 	padding: 0 15px;
-	max-width: 660px;
+	max-width: 1000px;
 }
 
 .header__title {
@@ -41,7 +41,7 @@
 
 .header__text {
 	margin-bottom: 40px;
-	font-size: 18px;
+	font-size: 24px;
 	line-height: 1.333;
 }
 
@@ -52,4 +52,18 @@
 .border {
 	border: 5px solid gray;
 	background-color: black;
+}
+
+.blinking-cursor {
+  display: inline-block;
+  margin-left: 2px;
+  font-weight: 600;
+  animation: blink 1s step-start infinite;
+  color: currentColor;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
