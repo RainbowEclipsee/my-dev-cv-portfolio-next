@@ -11,7 +11,7 @@ import "@/styles/main.css";
 
 export const metadata: Metadata = {
   title: "Bogdan Makarchuk | Frontend Developer",
-  description: "Персональное портфолио разработчика: Bogdan Makarchuk",
+  description: "Персональное портфолио разработчика: проекты, навыки и контакты.",
 };
 
 export default function RootLayout({

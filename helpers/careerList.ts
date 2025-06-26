@@ -40,7 +40,7 @@ Achievements:
   },
   {
     id: 1,
-    title: 'Informatiсa',
+    title: 'Informatica',
     workTime: '1 year 11 months',
     info: `Responsibilities:
 - Development of JS modules for maintaining electronic document management at Gazprom Transgaz Saint Petersburg
