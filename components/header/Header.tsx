@@ -12,7 +12,7 @@ const Header: React.FC = () => {
         </h1>
         <div className="header__text">
           <p>
-            with passion for learning and creating
+            driven by curiosity and ideas 
             <span className="blinking-cursor">_</span>  
           </p>
         </div>

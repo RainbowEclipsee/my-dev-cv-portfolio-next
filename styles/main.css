@@ -37,7 +37,7 @@
 
 ::selection {
   background-color: #00ab01;
-  color: black;             /* цвет текста при выделении */
+  color: black;
 }
 
 .dark {
@@ -55,10 +55,14 @@
 
 html,
 body {
+  /* Font clarity */
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+  
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
   font-family: 'IBM_VGA_FONT', sans-serif;
   letter-spacing: -0.5px;
 
