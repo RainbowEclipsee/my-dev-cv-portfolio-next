@@ -16,7 +16,8 @@ const Header: React.FC = () => {
             <span className="blinking-cursor">_</span>  
           </p>
         </div>
-        <a href="/assets/Makarchuk Bogdan.pdf"
+        <a href="https://cv.makarchuk-tech.vercel.app/"
+           rel="noopener noreferrer"
            target="_blank"
            className="btn"
            >
